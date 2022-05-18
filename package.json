@@ -1,0 +1,34 @@
+{
+  "name": "examen",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "transcrm back-end graphql API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "author": "Diyorbek Rustamjonov <drustamjonov0919@gmail.comm>",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-tools/schema": "^8.3.11",
+    "apollo-server-core": "^3.7.0",
+    "apollo-server-express": "^3.7.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "graphql-upload": "^13.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "pg-format": "^1.0.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "imports": {
+    "#config/*": "./src/config/*.js",
+    "#utils/*": "./src/utils/*.js",
+    "#modules/*": "./src/modules/*.js"
+  }
+}
